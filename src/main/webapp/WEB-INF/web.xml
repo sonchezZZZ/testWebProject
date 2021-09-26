@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="4.0" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+   http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd">
+    <servlet>
+        <servlet-name>My first Servlet</servlet-name>
+        <servlet-class>com.sonchez.EmployServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Counter</servlet-name>
+        <servlet-class>com.sonchez.CounterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>My first Servlet</servlet-name>
+        <url-pattern>/my-first-servlet/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Counter</servlet-name>
+        <url-pattern>/counter/*</url-pattern>
+    </servlet-mapping>
+</web-app>
